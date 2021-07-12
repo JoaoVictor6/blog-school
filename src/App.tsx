@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import GlobalStyle from "./GlobalStyle";
 
 function App(): JSX.Element {

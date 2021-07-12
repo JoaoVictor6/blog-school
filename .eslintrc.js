@@ -29,5 +29,6 @@ module.exports = {
     ],
     "import/no-unresolved": "off",
     "react/react-in-jsx-scope": "off",
+    "import/prefer-default-export": "off",
   },
 };
