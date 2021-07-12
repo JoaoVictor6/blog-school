@@ -13,7 +13,8 @@ export const Container = styled.header`
 export const HeaderInfo = styled.div`
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  padding: 220px 108px;
+  padding-top: 300px;
+  padding-left: 108px;
 
   > h1 {
     font-size: 80px;
