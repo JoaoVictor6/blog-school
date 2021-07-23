@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const MenuElement = styled.menu`
-  width: 100vw;
+  width: 100%;
+  display: block;
   background: rgba(46, 46, 46, 0.26);
   position: absolute;
   top: 0;
