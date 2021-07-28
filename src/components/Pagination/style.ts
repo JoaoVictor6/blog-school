@@ -51,3 +51,32 @@ export const ArticleInfo = styled.div`
     margin: 0;
   }
 `;
+
+export const PaginationDiv = styled.div`
+  display: flex;
+  margin: 0 auto;
+  color: #263238;
+  > * {
+    font-size: 16px;
+    border-style: none;
+    border: 1px solid #c4c4c4;
+    background: #fff;
+  }
+
+  div {
+    font-size: 18px;
+    padding: 7px 32px;
+  }
+
+  button {
+    padding: 6px 35px;
+    cursor: pointer;
+  }
+
+  button:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  button:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+`;
