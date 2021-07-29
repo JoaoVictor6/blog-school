@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { MenuElement } from "./style";
 
 export default function Menu(): JSX.Element {
@@ -6,7 +5,7 @@ export default function Menu(): JSX.Element {
     <MenuElement>
       <div>
         <a href="#articles">Artigos</a>
-        <Link to="/">Sobre</Link>
+        <a href="#about">Sobre</a>
       </div>
     </MenuElement>
   );
