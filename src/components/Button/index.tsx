@@ -1,14 +1,19 @@
 import { ButtonElement, Container } from "./style";
 
-type ButtonProps = {
+interface ButtonProps extends React.AnchorHTMLAttributes<ButtonProps> {
   placeholder: string;
-};
+  // eslint-disable-next-line react/require-default-props
+  isTransparent?: boolean;
+  whoIsLink: string;
+}
 
 export default function Button({
   placeholder = "undefined",
+  isTransparent = false,
+  whoIsLink,
 }: ButtonProps): JSX.Element {
   return (
-    <ButtonElement>
+    <ButtonElement transparent={isTransparent} href={whoIsLink}>
       <Container>
         <p>{placeholder}</p>
         <svg

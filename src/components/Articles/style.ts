@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Main = styled.article`
-  height: 100vh;
+  min-height: 100vh;
   background: #f6f6f6;
   margin: 0;
   display: flex;

@@ -7,7 +7,7 @@ export default function Header(): JSX.Element {
       <HeaderInfo>
         <h1>Energia nuclear</h1>
         <h2>Artigos e curiosidade</h2>
-        <Button placeholder="Saiba Mais" />
+        <Button isTransparent whoIsLink="#about" placeholder="Saiba Mais" />
       </HeaderInfo>
     </Container>
   );
