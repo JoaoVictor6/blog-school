@@ -10,7 +10,7 @@ export const Container = styled.div`
 
 export const Thumb = styled.img`
   border-radius: 5px;
-  width: 130px;
+  width: 110px;
   margin: 12px;
   margin-right: 18px;
 `;

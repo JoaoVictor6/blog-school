@@ -1,10 +1,17 @@
 import styled from "styled-components";
 
+type MenuElementProps = {
+  sticky?: boolean;
+};
+
 export const MenuElement = styled.menu`
   width: 100%;
   display: block;
-  background: rgba(46, 46, 46, 0.26);
-  position: absolute;
+  background: ${({ sticky }: MenuElementProps) =>
+    sticky ? "rgba(250, 171, 5, 0.73)" : "rgba(46, 46, 46, 0.26)"};
+
+  position: ${({ sticky }: MenuElementProps) =>
+    sticky ? "fixed" : "absolute"};
   top: 0;
 
   > div {
@@ -17,7 +24,7 @@ export const MenuElement = styled.menu`
     a {
       all: none;
       text-decoration: none;
-      padding: 16px 0 16px 0;
+      padding: 12px 0 12px 0;
       color: #fff;
       text-transform: capitalize;
       font-family: "Poppins", sans-serif;

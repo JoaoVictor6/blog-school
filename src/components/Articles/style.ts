@@ -16,6 +16,7 @@ export const Container = styled.div`
 
 export const ArticleTitle = styled.h1`
   padding: 12px;
+  padding-top: 47px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 36px;
