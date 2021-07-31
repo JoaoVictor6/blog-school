@@ -14,12 +14,20 @@ export const ButtonElement = styled.a`
   background: ${({ transparent }: ButtonProps) =>
     transparent ? "rgba(1, 5, 6, 0.34)" : "#2E2E2E"};
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s;
 
   &:hover {
     background: ${({ transparent }: ButtonProps) =>
       transparent ? "rgba(1, 5, 6, 0.5)" : "#2E2E2E"};
+    box-shadow: ${({ transparent }: ButtonProps) =>
+      transparent
+        ? "0px 4px 19px 0px rgba(250,171,5,0)"
+        : "0px 4px 19px 0px rgba(250,171,5,0.80)"};
+
+    border-color: ${({ transparent }: ButtonProps) =>
+      transparent ? "#fff" : "transparent"};
   }
+
   &:active {
     transform: scale(1.01);
   }
