@@ -2,17 +2,17 @@ import { useEffect, useState } from "react";
 import { MenuElement } from "./style";
 
 export default function Menu(): JSX.Element {
-  const [bodyOffset, setBodyOffset] = useState(
-    document.body.getBoundingClientRect()
-  );
-  const [scrollY, setScrollY] = useState(bodyOffset.top);
-
-  const listener = () => {
-    setBodyOffset(document.body.getBoundingClientRect());
-    setScrollY(-bodyOffset.top);
-  };
-
+  const [scrollY, setScrollY] = useState(0);
+  
+  const [bodyOffset, setBodyOffset] = useState({} as DOMRect);
+  
   useEffect(() => {
+    setBodyOffset(document.body.getBoundingClientRect())
+    
+    const listener = () => {
+      setScrollY(-bodyOffset.top);
+    };
+    
     window.addEventListener("scroll", listener);
 
     return () => {
